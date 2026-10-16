@@ -12,8 +12,8 @@ License:        GPL-3.0
 URL:            https://github.com/elementary/%{srcname}
 Source0:        %{url}/archive/%{version}/%{srcname}-%{version}.tar.gz
 
-#Provides:       elementary-dock = %{version}-%{release}
-#Obsoletes:      elementary-dock-lite
+Provides:       elementary-dock = %{version}-%{release}
+Obsoletes:      elementary-dock-lite
 
 BuildRequires:  meson
 BuildRequires:  vala
