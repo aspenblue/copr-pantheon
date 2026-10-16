@@ -13,8 +13,6 @@ URL:            https://github.com/elementary/%{srcname}
 Source0:        %{url}/archive/%{version}/%{srcname}-%{version}.tar.gz
 
 Provides:       elementary-dock = %{version}-%{release}
-Conflicts:      elementary-dock
-Conflicts:      pantheon-dock-lite
 Obsoletes:      elementary-dock < %{version}-%{release}
 Obsoletes:      pantheon-dock-lite < %{version}-%{release}
 
