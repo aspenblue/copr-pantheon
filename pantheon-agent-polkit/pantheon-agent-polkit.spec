@@ -2,7 +2,7 @@
 
 Name:           pantheon-agent-polkit
 Summary:        Pantheon Polkit Agent
-Version:        8.1.0
+Version:        8.1.0-fix
 Release:        %autorelease
 License:        LGPL-2.0-or-later
 
