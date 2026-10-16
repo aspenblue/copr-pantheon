@@ -3,8 +3,8 @@
 # https://github.com/elementary/dock/issues/418
 %global build_type_safety_c 1
 
-Name:           pantheon-dock
-Summary:        A quick app launcher and window switcher for Pantheon and elementary OS with workspace switcher
+Name:           elementary-dock-lite
+Summary:        A quick app launcher and window switcher for Pantheon and elementary OS without workspace switcher
 Version:        8.3.3
 Release:        %autorelease
 License:        GPL-3.0
@@ -14,7 +14,6 @@ Source0:        %{url}/archive/%{version}/%{srcname}-%{version}.tar.gz
 
 Provides:       elementary-dock = %{version}-%{release}
 Obsoletes:      elementary-dock < %{version}-%{release}
-Obsoletes:      pantheon-dock-lite < %{version}-%{release}
 
 BuildRequires:  meson
 BuildRequires:  vala
@@ -33,7 +32,7 @@ BuildRequires:  pkgconfig(wayland-scanner)
 
 
 %build
-%meson
+%meson -Dworkspace-switcher=false
 %meson_build
 
 
